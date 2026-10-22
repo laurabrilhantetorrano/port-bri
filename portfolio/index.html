@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="brand">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laura Brilhante Torrano — Portfólio</title>
+  <meta name="description" content="Portfólio de Laura Brilhante Torrano. Estudante do ensino médio técnico em TI, rumo à Engenharia de Software e da Computação.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23FF63F8%22/><text y=%2268%22 x=%2250%22 font-size=%2260%22 font-family=%22serif%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23120210%22>L</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor (Igloo.inc inspired) -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+  </div>
+
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Header / Menu Fixo (Funcionalidade 1) -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      
+      <a href="#hero" class="brand-link" id="brandLink" aria-label="Laura Brilhante Torrano - Início">
+        <span class="gothic-mark">𝕷</span>
+        <span class="brand-name">Laura Brilhante<span class="brand-surname"> Torrano</span></span>
+      </a>
+
+      <div class="header-status" id="headerStatus">
+        <span class="status-pulse" aria-hidden="true"></span>
+        <span class="status-text">Ensino Médio em TI</span>
+        <span class="status-sep">/</span>
+        <span class="status-time" id="liveClock">--:--:--</span>
+      </div>
+
+      <div class="header-actions">
+        <nav class="nav-menu" id="navMenu" aria-label="Navegação principal">
+          <a href="#hero" class="nav-link active" id="navHero">Início</a>
+          <a href="#sobre" class="nav-link nav-soon" id="navSobre" title="Próxima etapa">Sobre</a>
+          <a href="#projetos" class="nav-link nav-soon" id="navProjetos" title="Próxima etapa">Projetos</a>
+          <a href="#contato" class="nav-link nav-soon" id="navContato" title="Próxima etapa">Contato</a>
+        </nav>
+
+        <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Alternar modo escuro/vibrante" title="Alternar Modo Escuro / Claro">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label" id="themeLabel">Modo Escuro</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main id="mainContent">
+    <section class="hero-section" id="hero" aria-label="Apresentação inicial">
+      <div class="hero-container">
+
+        <div class="hero-eyebrow">
+          <div class="eyebrow-badge">
+            <span class="badge-index">01</span>
+            <span class="badge-tag">PORTFÓLIO &amp; ENGENHARIA</span>
+          </div>
+          <div class="eyebrow-focus">
+            <span class="focus-dot"></span>
+            <span>OBJETIVO: ENGENHARIA DE SOFTWARE OU DA COMPUTAÇÃO</span>
+          </div>
+        </div>
+
+        <div class="hero-title-wrapper">
+          <div class="hero-line hero-line-1">
+            <span class="hero-word" data-text="LAURA">LAURA</span>
+            <span class="gothic-accent-tag" aria-hidden="true">𝕷.𝕭.𝕿.</span>
+          </div>
+          <div class="hero-line hero-line-2">
+            <span class="hero-word outline-text" data-text="BRILHANTE">BRILHANTE</span>
+          </div>
+          <div class="hero-line hero-line-3">
+            <span class="hero-word" data-text="TORRANO">TORRANO</span>
+            <span class="hero-asterisk" aria-hidden="true">✦</span>
+          </div>
+        </div>
+
+        <div class="hero-bottom-grid">
+          
+          <div class="hero-bio-col">
+            <p class="hero-bio">
+              Estudante do ensino médio em <strong>TI</strong>, construindo a base técnica em código, lógica e sistemas digitais. Determinada a transformar curiosidade científica em código de alto impacto através da <strong>Engenharia de Software e da Computação</strong>.
+            </p>
+            <div class="hero-tags">
+              <span class="pill-tag">HTML · CSS · JavaScript Puro</span>
+              <span class="pill-tag">Arquitetura de Software</span>
+              <span class="pill-tag">Frontend Editorial</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-col">
+            <div class="cta-wrapper">
+              <a href="#projetos" class="cta-button primary-cta" id="heroCtaBtn">
+                <span class="cta-text">Explorar Projetos</span>
+                <span class="cta-icon-box">
+                  <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+
+              <a href="#contato" class="cta-button secondary-cta" id="heroContactBtn">
+                <span>Entrar em contato</span>
+                <span class="cta-subarrow">↓</span>
+              </a>
+            </div>
+
+            <div class="scroll-indicator" aria-hidden="true">
+              <span class="scroll-track">
+                <span class="scroll-thumb"></span>
+              </span>
+              <span class="scroll-caption">Role para navegar</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
